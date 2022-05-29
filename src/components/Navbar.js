@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const Navbar = () => {
-    return(
+    const [navbarOpen, setNavbarOpen] = useState(false)
+
+    return (
         <div>
-            Nav
+
         </div>
     )
 }
