@@ -9,9 +9,9 @@ const Navbar = () => {
     }
 
     return (
-        <div>
+        <div className="navBar">
             <button onClick={menuButtonHandler}>{navbarOpen ? "Close" : "Open"}</button>
-            <ul className={`menunav ${navbarOpen ? "showMenu" : ""}`}>this is ul</ul>
+            <ul className={`menuNav ${navbarOpen ? "showMenu" : ""}`}>this is ul</ul>
         </div>
     )
 }
