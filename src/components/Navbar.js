@@ -10,10 +10,26 @@ const Navbar = () => {
         setNavbarOpen(!navbarOpen)
     }
 
+    const closeMenu = () => {
+        setNavbarOpen(false)
+    }
+
     return (
         <div className="navBar">
             <button onClick={menuButtonHandler}>{navbarOpen ? "Close" : "Open"}</button>
-            <ul className={`menuNav ${navbarOpen ? "showMenu" : ""}`}>this is ul</ul>
+            <ul className={`menuNav ${navbarOpen ? "showMenu" : ""}`}>
+                <NavLink
+                    to={link.path}
+                    activeClassName="active-link"
+                    onClick={() => closeMenu()}
+                    exact
+                >
+                    {link.text}
+                </NavLink>
+
+
+            </ul>
+
         </div>
     )
 }
