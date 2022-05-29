@@ -4,7 +4,8 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
     const menuButtonHandler = () => {
-        setNavbarOpen(prevState => !prevState)
+        /* setNavbarOpen(prevState => !prevState) */
+        setNavbarOpen(!navbarOpen)
     }
 
     return (
