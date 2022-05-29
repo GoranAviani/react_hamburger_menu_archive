@@ -18,14 +18,8 @@ const Navbar = () => {
         <div className="navBar">
             <button onClick={menuButtonHandler}>{navbarOpen ? "Close" : "Open"}</button>
             <ul className={`menuNav ${navbarOpen ? "showMenu" : ""}`}>
-                <NavLink
-                    to={link.path}
-                    activeClassName="active-link"
-                    onClick={() => closeMenu()}
-                    exact
-                >
-                    {link.text}
-                </NavLink>
+                <li>Example</li>
+                <li>Example</li>
 
 
             </ul>
