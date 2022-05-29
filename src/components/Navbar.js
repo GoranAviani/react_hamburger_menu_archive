@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <button onClick={menuButtonHandler}>{navbarOpen ? "Open" : "Close"}</button>
+            <button onClick={menuButtonHandler}>{navbarOpen ? "Close" : "Open"}</button>
         </div>
     )
 }
