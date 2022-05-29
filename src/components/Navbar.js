@@ -5,7 +5,7 @@ const Navbar = () => {
 
     return (
         <div>
-
+            <button>{navbarOpen ? "Open" : "Close"}</button>
         </div>
     )
 }
