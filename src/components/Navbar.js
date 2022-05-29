@@ -3,9 +3,13 @@ import React, {useState} from 'react';
 const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
+    const menuButtonHandler = () => {
+        setNavbarOpen(prevState => !prevState)
+    }
+
     return (
         <div>
-            <button>{navbarOpen ? "Open" : "Close"}</button>
+            <button onClick={menuButtonHandler}>{navbarOpen ? "Open" : "Close"}</button>
         </div>
     )
 }
